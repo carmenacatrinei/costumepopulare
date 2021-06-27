@@ -1,0 +1,146 @@
+$nrimag: <%- nrImagini %>;
+
+
+/*$culoare-1: #cd853f;
+$culoare-2:#FFB469;
+$culoare-3:#804D1B;
+$culoare-4: #0E6580;
+$culoare-5: #3FABCC;*/
+
+#sectiune-galerie-animata{
+	padding-left: 40px;
+}
+
+.galerie-a{
+	margin: auto;
+	width:400px;
+	height:500px;
+	// border: double 4px transparent;
+	// border-radius: 20px;
+	// background-image: linear-gradient(white, white), radial-gradient(circle at top left, $culoare-4, $culoare-5);
+	// background-origin: border-box;
+	// background-clip: content-box, border-box;
+	border: 30px solid;
+	border-image-source: url(https://image.freepik.com/free-vector/abstract-elegant-luxury-beautiful-background_1055-7213.jpg);
+	border-image-slice: 25 25 25 25;
+	border-image-repeat: stretch; 
+	position:relative;
+	overflow:hidden;
+	margin-bottom:5rem;
+}
+
+
+.galerie-a figcaption{
+	position:absolute;
+	bottom:0;
+	background:rgba(255,255,255,1);
+	width:100%;
+	text-align:center;
+}
+
+.galerie-a figure{
+	// position:relative;
+	width:400px;
+    height: 450px;
+}
+
+
+#galerie-animata figure{	
+	position:absolute;
+	left:-40px;
+	top:-16px;
+	z-index:0;
+	animation-name:galerie-animata;
+	animation-play-state: running;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-fill-mode:forwards;
+	animation-duration: $nrimag*3s; // INTIAL 12 iamg de 3s fiecare
+	transform-origin:0 center;
+}
+
+#galerie-animata:hover figure{
+	animation-play-state: paused;
+}
+
+@for $i from 0 to $nrimag{
+	#galerie-animata figure:nth-of-type(#{$nrimag - $i}){
+		animation-delay: $i*3s;
+	}
+}
+
+
+
+/*cum calculam timpii:
+- avem 7 poze; vrem pentru fiecare un timp de afisare de 1.5 secunde si o trecere spre urmatoarea poza de 1.5 secunde
+- rezulta 3 secunde pentru fiecare imagine
+- 7imagini * 3secunde =21 secunde in total pentru animatie (animation-duration) si fiecare poza cu un delay = 3* numarul de ordine
+- momentul in care trebuie ascunsa poza si pusa in spatele celorlalte (ca sa isi astepte randul pentru noua animatie:
+il calculam cu formula  timp_afisare(normal+trecerea la urmatoarea poza)/timp_total*100 = 3/21*100 =  14.285714(aproximativ)
+100%..... 21s
+x%........3s
+
+- calculam 100-14.285714=85.714286 - la acest moment imaginea trebuie sa se vada in spatele imaginii care se afiseaza in mod curent (ca sa se vada si cat timp se realizeaza efectul de schimbare a imaginii
+
+!!!!!!!!!!!!!!!!!!!!!!!!CALCULE PT 12 IMAG
+3/36*100 = 8.33
+100 - 8.33 = 91.67
+*/
+
+
+// @keyframes gal_exemplu{ 
+// 	0% {z-index:10;opacity:1;} /*perioada 0-5% in care se afiseaza fara efect */
+// 	7.142857% {transform:$transformare_i;}
+// 	12%{opacity:1;} /* de  aici doresc sa descresc si opacitatea;*/
+// 	14.285714%{z-index:10;opacity:0;transform:$transformare_f;}
+// 	14.285715%{z-index:-10; transform:$transformare_i;}/* il ascund cat mai in spate sa nu vina peste imaginile care erau mai sus in html decat el*/
+	
+// 	85.714287%{opacity:0;transform:$transformare_i;z-index:-10;}	
+// 	85.714288%{z-index:0;}/setez z-index la 0 ca sa revina la ordinea normala de afisare/
+// 	100%{opacity:1;z-index:0;}
+// }
+
+@keyframes galerie-animata{ 
+    0%{
+        left: 0;
+        opacity: 1;
+    }
+
+    3%{
+        left: 0;
+        opacity: 1;
+    }
+
+    9%{
+        left: 25%;
+        opacity: 1;
+    }
+
+    10%{
+        left: -25%;
+        opacity: 0;
+    }
+
+    90%{
+        left: 0;
+        opacity: 0;
+    }
+    
+    100%{
+        left: 1;
+        opacity: 1;
+    }
+
+}
+
+@media screen and (max-width:1200px){
+	#sectiune-galerie-animata{
+		display: none;
+	}
+}
+
+@media screen and (max-width:750px){
+	#sectiune-galerie-animata{
+		display: none;
+	}
+}

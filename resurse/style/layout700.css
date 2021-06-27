@@ -1,0 +1,13 @@
+html{
+    font-size: 12px;
+}
+#container{
+    display: block;
+}
+#container>section{
+    margin-bottom: 0.7rem;
+}
+#hamburger{
+    display:block;
+}
+

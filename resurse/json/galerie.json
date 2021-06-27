@@ -1,0 +1,113 @@
+{
+  "cale_galerie": "resurse/imagini/galerie",
+  "imagini": [
+    {
+      "cale_relativa": "Bacau.png",
+      "nume": "Bacau",
+      "descriere": "Costum Popular, Bacau",
+      "timp": "dimineata"
+    },
+    {
+      "cale_relativa": "Banat.png",
+      "nume": "Banat",
+      "descriere": "Costum Popular, Banat",
+      "timp": "zi"
+    },
+    {
+      "cale_relativa": "Botosani.png",
+      "nume": "Botosani",
+      "descriere": "Costum Popular, Botosani",
+      "timp": "noapte"
+    },
+    {
+      "cale_relativa": "Iasi.png",
+      "nume": "Iasi",
+      "descriere": "Costum Popular, Iasi",
+      "timp": "dimineata"
+    },
+    {
+      "cale_relativa": "Marginimea-Sibiului.png",
+      "nume": "Marginimea-Sibiului",
+      "descriere": "Costum Popular, Marginimea Sibiului",
+      "timp": "zi"
+    },
+    {
+      "cale_relativa": "Neamt.png",
+      "nume": "Neamt",
+      "descriere": "Costum Popular, Neamt",
+      "timp": "noapte"
+    },
+    {
+      "cale_relativa": "Roman.png",
+      "nume": "Roman",
+      "descriere": "Costum Popular, Roman",
+      "timp": "dimineata"
+    },
+    {
+      "cale_relativa": "Arad.png",
+      "nume": "Arad",
+      "descriere": "Costum Popular, Arad",
+      "timp": "zi"
+    },
+    {
+      "cale_relativa": "Vrancea.png",
+      "nume": "Vrancea",
+      "descriere": "Costum Popular, Vrancea",
+      "timp": "noapte"
+    },
+    {
+      "cale_relativa": "Model-Banat.png",
+      "nume": "Model-Banat",
+      "descriere": "Model, Banat",
+      "timp": "dimineata"
+    },
+    {
+      "cale_relativa": "Model-Bistrita.png",
+      "nume": "Model-Bistrita",
+      "descriere": "Model, Bistrita",
+      "timp": "zi"
+    },
+    {
+      "cale_relativa": "Model-Braila.png",
+      "nume": "Model-Braila",
+      "descriere": "Model, Braila",
+      "timp": "noapte"
+    },
+    {
+      "cale_relativa": "Model-Bucovina.png",
+      "nume": "Model-Bucovina",
+      "descriere": "Model, Bucovina",
+      "timp": "dimineata"
+    },
+    {
+      "cale_relativa": "Model-Galati.png",
+      "nume": "Model-Galati",
+      "descriere": "Model, Galati",
+      "timp": "zi"
+    },
+    {
+      "cale_relativa": "Model-Gorj.png",
+      "nume": "Model-Gorj",
+      "descriere": "Model, Gorj",
+      "timp": "noapte"
+    },
+    {
+      "cale_relativa": "Model-Muscel.png",
+      "nume": "Model-Muscel",
+      "descriere": "Model, Muscel",
+      "timp": "dimineata"
+    },
+    {
+      "cale_relativa": "Model-Neamt.png",
+      "nume": "Model-Neamt",
+      "descriere": "Model, Neamt",
+      "timp": "zi"
+    },
+    {
+      "cale_relativa": "Model-Sibiu.png",
+      "nume": "Model-Sibiu",
+      "descriere": "Model, Sibiu",
+      "timp": "noapte"
+    }
+  ]
+}

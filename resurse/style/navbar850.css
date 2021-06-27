@@ -1,0 +1,78 @@
+#hamburger {
+    display: block;
+}
+
+ul.navigation{
+    display:none;
+    position:absolute;
+    width:100%;
+    transform-origin: top;
+}
+
+#ch-menu:checked+ul.navigation{
+    display: block;
+    mask-repeat: no-repeat;
+    mask-position: 0 100%;
+    -webkit-mask-position: 0 100%;
+    mask-size: 100% 400%;
+    -webkit-mask-size: 100% 400%;
+    mask-image: linear-gradient(black 0%, black 25%, transparent 100%);
+    -webkit-mask-image: linear-gradient(black 0%, black 25%, transparent 100%);
+    animation-name: asub;
+    animation-duration: 900ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes asub {
+    0%{
+
+    }
+    100%{
+        mask-position: 0 0%;
+        -webkit-mask-position: 0 0%;
+    }
+}
+
+nav ul.navigation li{
+    width:100%;
+    transition: rotate(100deg); 
+}
+
+nav ul.navigation>li ul{
+    position:absolute;
+    width:100%;
+    z-index:20;
+}
+
+.navigation>li a:hover {
+    color: white;
+}
+
+nav ul.navigation>li:hover>ul{
+    animation: none;
+    transition-delay: 500ms;
+}
+
+nav {
+background: var(--color-e);
+}
+
+nav ul.navigation>li:hover>ul{
+    display:block;
+    animation-name: aparitie_submeniu;
+    animation-iteration-count:1;
+    animation-duration:0.7s;
+    animation-fill-mode:forwards;
+    animation-timing-function:linear;
+}
+
+@keyframes aparitie_submeniu{
+    0%{
+        transform:scale(0);
+    } 
+    100%{
+        transform:scale(1);
+    }
+}

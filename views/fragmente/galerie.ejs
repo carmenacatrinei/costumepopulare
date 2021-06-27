@@ -1,0 +1,15 @@
+<section id="galerie_statica">
+    <h2>Galerie</h2>
+    <div id="grid-galerie">
+        <% for (let imag of locals.imagini_verif) {%>
+            <figure>
+                <picture>
+                    <source media="(max-width:700px)" srcset="/<%-imag.mic%>"/>
+                    <source media="(max-width:1200px)" srcset="/<%-imag.mediu%>"/>
+                    <img src="/<%-imag.mare%>" alt="<%- imag.titlu %>"/>
+                    </picture>
+                    <figcaption><%-imag.descriere%> </figcaption>
+            </figure> 
+       <% } %> 
+    </div>
+</section>

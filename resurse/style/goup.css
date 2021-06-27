@@ -1,0 +1,52 @@
+#goup{
+    position: fixed;
+    opacity: 0.7;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 2.5rem;
+    border: 7px solid var(--color-d);
+    border-top: transparent;
+    border-bottom: transparent;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#goup:hover{
+    opacity: 1;
+    
+}
+#goup:hover>div{
+    transform: translateY(-80%);
+    border-bottom-color: var(--color-c);
+}
+
+#sageata{
+    margin-top: 20px;
+    height:0px;
+    width:0;
+    display:inline-block;
+    border-bottom: 0.7rem solid var(--color-d);
+    border-left: 0.7rem solid transparent;
+    border-right: 0.7rem solid transparent;
+    vertical-align: middle;
+    transition: transform 500ms linear;
+}
+
+#goup span{
+    visibility: hidden;
+    background-color: var(--color-d);
+    color: white;
+    padding-right: 0.2rem;
+    padding-bottom: 0.2rem;
+    width: 70px;
+    margin-right: 40px;
+    right: 105%;
+    position: absolute;
+    z-index: 1;
+}
+
+#goup:hover span{
+    visibility: visible;
+}

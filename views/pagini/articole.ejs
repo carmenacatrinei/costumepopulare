@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ro">
+    
+    <head>
+    <!-- META-URI -->
+    <meta name="keywords" content="costume populare, costume, popular, costume nemuritoare, tradițional, românesc, etnofolcloric, etnografie">
+    <meta name="description" content="Bine ați venit în locul în care trecutul se trasformă în prezent! 
+    Vă invităm să vă bucurați de cele mai frumoase și elegante articole vestimentare ale românilor din trecut, 
+    dar și cele mai valoroase ale celor din prezent!">
+
+    <title>Costume Nemuritoare </title>
+    <%- include("../fragmente/head") %> <!--minus afiseaza-->
+
+    </head>
+    <style>
+        body{
+            padding: 3rem;
+        }
+    </style>
+
+    <body>
+        <%- include("../fragmente/header") %> <!--minus afiseaza-->
+        <main>
+           <section>
+               <h2>Articole</h2>
+               <%-include ("../fragmente/galerie")%>
+           </section>
+        </main>
+        <%- include("../fragmente/footer") %> <!--minus afiseaza-->
+        <div id="banner">Acesta este un proiect școlar!</div>
+    </body>
+</html>

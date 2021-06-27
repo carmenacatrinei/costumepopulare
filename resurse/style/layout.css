@@ -1,0 +1,60 @@
+html{
+    font-size: 16px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 0.6fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 1fr;
+    grid-template-areas:  "despre despre despre"
+                          "calendar tabel anunturi"
+                          "lista tabel anunturi"
+                          "lista statistici server"
+                          "diverse diverse diverse";
+}
+
+#container>section {
+    border: solid;
+    border-color: black;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    margin:0.5rem;
+}
+
+#tabel{
+    grid-area: tabel;
+}
+
+#calendar{
+    grid-area: calendar;
+}
+
+#anunturi{
+    grid-area: anunturi;
+}
+
+#lista{
+    grid-area: lista;
+}
+
+#statistici{
+    grid-area: statistici;
+}
+
+#server{
+    grid-area: server;
+}
+
+#diverse{
+    grid-area: diverse;
+}
+
+#despre{
+    grid-area: despre;
+}

@@ -1,0 +1,44 @@
+#banner{
+    background-color: var(--color-c);
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    color: white;
+    animation-name: animatie-banner, disparitie-banner;
+    animation-duration: 2s, 5s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear;
+    border-style:groove;
+    border-color: solid black;
+    border-width: 5px;
+    font-weight: bold;
+}
+
+@keyframes animatie-banner{
+    0%{
+        left: -500px;
+        background-color: var(--color-e);
+        border-color: plum;
+    }
+    50%{
+        background-color: plum;
+        border-color: var(--color-e);
+    }
+    100%{
+        background-color: var(--color-e);
+        border-color: plum;
+        left: 0px;
+    }
+}
+
+@keyframes disparitie-banner{
+    0%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+

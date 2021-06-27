@@ -1,0 +1,17 @@
+html{
+    font-size:14px;
+}
+#container{
+    display:grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-areas: "despre despre"
+                         "lista tabel "
+                         "calendar anunturi"
+                         "statistici server "
+                         "diverse diverse";
+    padding: 1rem;
+}
+#container>section{
+    margin:0.8rem;
+}
+

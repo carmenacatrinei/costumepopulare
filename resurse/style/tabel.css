@@ -1,0 +1,37 @@
+#tabel {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  
+#tabel td, #tabel th  {
+    border: 1px solid black;;
+    padding: 8px;
+    text-align: center;
+  }
+
+#tabel td:nth-child(even){
+    background-color: var(--color-b);
+}
+
+#tabel td:nth-child(odd){
+    background-color: var(--color-e);
+}
+
+#tabel tr:hover td {
+    background-color: white;
+}
+
+#tabel th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--color-d);
+    color: white;
+  }
+
+  table #progr {
+      text-align: center;
+  }

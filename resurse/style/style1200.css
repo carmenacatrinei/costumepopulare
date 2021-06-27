@@ -1,0 +1,9 @@
+body{
+    --body-padding: 2rem;
+    background-image: url(icon.png), linear-gradient(var(--color-c), white);
+    background-color: #cccccc;
+}
+
+#banner{
+    display: none;
+}

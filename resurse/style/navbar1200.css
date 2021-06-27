@@ -1,0 +1,6 @@
+.navigation .menu-anim .maison {
+    display:none;
+}
+.navigation .menu-anim:hover .maison {
+    display:none;
+}

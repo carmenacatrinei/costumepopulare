@@ -1,0 +1,103 @@
+@media print {
+
+    header::before {
+        position: absolute;
+        content: "Acesta este un proiect școlar!";
+        margin-left: 10%;
+        margin-right: 10%;
+        top: -20rem;
+        width: 80%;
+        height: 2.5rem;
+        text-align: center;
+        border:black dotted 5px;
+    }
+    
+    header {
+        position: relative;
+        float: none;
+        page-break-after: always;
+    } 
+
+    .no-print, #banner, .no-print *{
+        display: none !important;
+
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    h1{
+        page-break-after: always;
+        margin-top: 50%;
+        text-align:center;
+        margin-left:1cm;
+        text-decoration: underline;
+        font-size: 40px;
+        position: static;
+    }
+
+    footer{
+        page-break-before: always;
+    }
+
+    #container{
+        font-size: 10px;
+        box-sizing:border-box;
+        page-break-before:always;
+        background-color: white;
+        /*grid-template-rows: calc(100vh - 10px) 100vh 100vh 100vh;*/
+        }
+
+        html, body {
+        width: 210mm;
+        /* height: 297mm; */
+        /*height: 282mm;*/
+        overflow:visible !important;
+        }
+
+        #watermark
+        {
+            display: block;
+            position: fixed;
+            bottom:0;
+            color:rgba(0,0,0,0.4);
+            right:0;
+        }
+
+        #watermark::after{
+            
+            opacity:0.65;
+            width: 100px;
+            height: 2cm;
+            padding:1em;
+            display: block;
+            background: white;
+            border:double black 4px;
+            content:"Copyright Carmen Acatrinei";
+        }
+    
+    }
+    
+    @page {
+        size: A4 portrait;
+        margin-bottom:2cm;
+        margin-top:2cm;
+        counter-increment: page;
+          
+    }
+
+    @page:left{
+    
+        margin-left:2.5cm;
+        margin-right:0.5cm;
+    }
+
+    @page:right{
+    
+        margin-right:2.5cm;
+        margin-left:0.5cm;
+    }
+    
+    
